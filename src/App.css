@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1225px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* justify-content: space-between; */
+  /* row-gap: 20px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.offer-card-container {
+  margin-bottom: 60px;
+  /* border: solid black 2px; */
+  width: calc(100% / 5 - 80px / 5);
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.offer-card-container:not(:nth-child(5n)) {
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+  /* border: solid black 2px; */
+}
+.container-header {
+  display: flex;
+}
+img {
+  width: 8%;
+  height: 40px;
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
+/*--------- Header----------------------- */
+.search-input {
+  height: 30px;
+  width: 500px;
+  padding: 5px;
+  background-color: #f5f6f7;
+  border-radius: 5px;
+  margin-top: 10px;
+  border-style: none;
+}
+.button-inscrire {
+  margin-left: 60px;
+  margin-top: 40px;
+  width: 120px;
+  background: white;
+  color: #2cb1ba;
+  border-radius: 5px;
+  border-color: #2cb1ba;
+  height: 30px;
+}
+.button-connecter {
+  margin-top: 40px;
+  margin-left: 23px;
+  width: 120px;
+  height: 30px;
+  background: white;
+  color: #2cb1ba;
+  border-radius: 5px;
+  border-color: #2cb1ba;
+}
+.button-vend {
+  margin-top: 40px;
+  margin-left: 90px;
+  width: 121px;
+  background: #2cb1ba;
+  color: white;
+  border-radius: 5px;
+  border-color: #2cb1ba;
+}
+/* --------LOGIN--------------- */
+.login-form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.login-form input{
+  width: 25%;
+  margin-bottom: 20px;
+
+}
+.title-connecter{
+  font-weight:500;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.button-connection{
+  height: 39px;
+  background: #2cb1ba;
   color: white;
+  border-radius: 7px;
+  border-color: #2cb1ba; 
+}
+/* --------SIGNUP--------------- */
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.signup-form input {
+  width: 25%;
+  margin-bottom: 20px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-inscription{
+  font-weight:500;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
+.checkbox-newsletter{
+  width:270px;
+  display: flex;
+}
+.checkbox-button{
+  height: 25px;
+  margin-top: 20px;
+  }
+ .p-checkbox{
+  margin-top: 23px;
+ }
+ .button-inscire{
+height: 39px;
+background: #2cb1ba;
+color: white;
+border-radius: 7px;
+border-color: #2cb1ba;
+ }
+ input{
+  height: 21px;
+  border-radius: 4px;
+  border-color: black;
+ }
